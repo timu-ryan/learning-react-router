@@ -1,0 +1,10 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: dashed 1px red;
+}
+
+.menu__link_active {
+  color: #4AEA37;
+} 
