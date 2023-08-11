@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter> {/* imported BrowserRouter */}
+    <BrowserRouter> {/* imported BrowserRouter {npm i react-router-dom@6.3.0}*/}
       <App />
     </BrowserRouter>
   </React.StrictMode>

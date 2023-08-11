@@ -14,6 +14,8 @@ import Hobbies from "./about-me/Hobbies";
 import Contact from "./about-me/Contact";
 import './styles/App.css';
 
+import PageNotFound from './PageNotFound';
+
 import { Routes, Route } from 'react-router-dom'; //imported routes
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
         </Route>
 
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes> 
     </div>
   );
