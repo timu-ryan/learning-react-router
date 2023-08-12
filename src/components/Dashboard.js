@@ -10,7 +10,8 @@ function Dashboard () {
       <p>
         #1 среди авторов обзоров на эмодзи в этом году!
       </p>
-      <Link to="/reviews">
+      {/* <Link to="/reviews"> */}
+      <Link to="/learning-react-router/reviews">
         Нажмите, чтобы увидеть самые свежие ревью!
       </Link>
       <br />

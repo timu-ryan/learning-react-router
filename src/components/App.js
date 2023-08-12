@@ -16,27 +16,34 @@ import './styles/App.css';
 
 import PageNotFound from './PageNotFound';
 
+import { BrowserRouter } from 'react-router-dom';
+
 import { Routes, Route } from 'react-router-dom'; //imported routes
+import { Navigate } from 'react-router-dom';
+
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <Header />
       <NavBar />
       <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/reviews" element={<Reviews />} />
+        {/* <Route path='/learning-react-router' element={<Navigate to='/' />} /> */}
+        <Route path="/learning-react-router" element={<Dashboard />} />
+        <Route path="/learning-react-router/reviews" element={<Reviews />} />
 
-        <Route path="/about-me" element={<AboutMe />}>
+        <Route path="/learning-react-router/about-me" element={<AboutMe />}>
           <Route path="my-story" element={<MyStory />} />
           <Route path="hobbies" element={<Hobbies />} />
           <Route path="contact" element={<Contact />} />
         </Route>
 
-        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/learning-react-router/about-us" element={<AboutUs />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes> 
     </div>
+    </BrowserRouter>
   );
 }
 
